@@ -75,5 +75,80 @@ This will reapply the commit to `main` without affecting other changes.
 
 ---
 
-## Keep your branch safe from falling off the tree 😁 🚀
 
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 🧹 Removing Untracked Files in Git  
+*Clean up the mess and keep your repo tidy!*
+
+Sometimes your working directory contains untracked files that clutter your repo. You can remove them using `git clean`.
+
+
+### **1. Check What Will Be Deleted**
+Before running any destructive command, check which untracked files would be removed:
+
+```sh
+git clean -n
+```
+
+This will show a **preview** of untracked files and directories that would be deleted.
+
+---
+
+### **2. Remove Untracked Files**
+To delete the untracked files (but not directories):
+
+```sh
+git clean -f
+```
+
+---
+
+### **3. Remove Untracked Files and Directories**
+If you want to remove both untracked files and directories:
+
+```sh
+git clean -fd
+```
+
+---
+
+### **4. Remove Ignored and Untracked Files**
+To remove **everything** including ignored files:
+
+```sh
+git clean -xfd
+```
+
+- `-x`: Removes ignored files (those listed in `.gitignore`)
+- `-f`: Forces the deletion (required)
+- `-d`: Deletes untracked directories
+
+⚠️ **Warning:** These commands are irreversible. Always run `git clean -n` first to preview what will be removed!
+
+<br><br><br>
+## Keep your branch safe from falling off the tree 😁 🚀
