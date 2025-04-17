@@ -151,4 +151,21 @@ git clean -xfd
 ⚠️ **Warning:** These commands are irreversible. Always run `git clean -n` first to preview what will be removed!
 
 <br><br><br>
+
+
+
+## 🔁 Git Pull with Rebase
+
+To keep a clean and linear Git history, we recommend using `--rebase` when pulling changes from a remote branch.
+
+### ✅ One-Time Pull with Rebase
+
+To pull changes from a remote branch and rebase your local changes on top:
+
+```bash
+git pull --rebase origin feature/static-html
+```
+
+<br><br><br>
+
 ## Keep your branch safe from falling off the tree 😁 🚀
